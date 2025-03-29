@@ -10,17 +10,17 @@ function App() {
       <Form
         sectionTitle="General Info"
         svgType={bookSVG}
-        formFields={["Full Name", "Email", "Phone Number", "City / State"]}
+        formFields={["Full Name", "Email", "Phone Number", "City", "State"]}
         localName="general"
       />
       <Form
-        sectionTitle="Contact Info"
+        sectionTitle="Education"
         svgType={userSVG}
         formFields={["School Name", "Study", "Start Date", "Graduation Date"]}
-        localName="contact"
+        localName="education"
       />
       <Form
-        sectionTitle="Education and Work"
+        sectionTitle="Work"
         svgType={phoneSVG}
         formFields={[
           "Company Name",
@@ -30,11 +30,11 @@ function App() {
           "End Date",
           "Description",
         ]}
-        localName="education/work"
+        localName="work"
       />
       <Display localName="general" />
-      <Display localName="contact" />
-      <Display localName="education/work" />
+      <Display localName="education" />
+      <Display localName="work" />
     </div>
   );
 }

@@ -25,17 +25,20 @@ const Form = (props) => {
 const OpenForm = ({ formFields, localName }) => {
   //Use localstorage to store formData on submit
   //localName dynamically created new localStorages for each container
-  const [formData, setFormData] = useLocalStorage(localName, {});
+
+  const [storedData, setStoredData] = useLocalStorage(localName, {});
+  const [formInput, setFormInput] = useState(storedData);
 
   //Submits data to display
   function handleSubmit(e) {
     e.preventDefault();
+    setStoredData(formInput);
   }
 
   //Changes local storage as soon as user types
   function handleChange(e) {
     const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    setFormInput((prev) => ({ ...prev, [name]: value }));
   }
 
   return (
@@ -49,7 +52,7 @@ const OpenForm = ({ formFields, localName }) => {
               <input
                 id={inputName}
                 name={inputName}
-                value={formData[inputName] || ""}
+                value={formInput[inputName] || ""}
                 onChange={handleChange}
               />
             </div>
