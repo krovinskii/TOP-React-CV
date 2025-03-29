@@ -42,8 +42,8 @@ const OpenForm = ({ formFields, localName }) => {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className="formContainer">
+      <form onSubmit={handleSubmit} className="form">
         {formFields.map((field, index) => {
           const inputName = field.toLowerCase().replace(/\s+/g, "");
           return (

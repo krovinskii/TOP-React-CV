@@ -1,6 +1,101 @@
-.info-form img {
-  height: 2rem;
-}
+/* Button styling */
 .info-form {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  max-width: 300px;
+  padding: 0.8rem;
+  background-color: #4288b5;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.info-form img {
+  height: 1.5rem;
+  filter: invert(91%) sepia(19%) saturate(94%) hue-rotate(167deg)
+    brightness(102%) contrast(94%);
+}
+
+.info-form:hover {
+  background-color: #35729a;
+}
+
+.info-form:active {
+  transform: scale(0.98);
+}
+
+/* Form container */
+.formContainer {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* Form structure */
+.form {
+  width: 100%;
+  background-color: #4288b5;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: none;
+}
+
+/* Input field layout */
+.form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 100%;
+}
+
+/* Labels */
+.form label {
+  font-size: 1rem;
+  color: white;
+}
+
+/* Input fields */
+.form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+/* Submit button */
+.form button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #9bc3de;
+  color: #234057;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.form button:hover {
+  background-color: #cadeed;
+  border-color: #234057;
+}
+
+.form button:active {
+  transform: scale(0.98);
+  background-color: #b5d4e5;
 }

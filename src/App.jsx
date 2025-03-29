@@ -8,36 +8,48 @@ import Header from "./header";
 import Footer from "./Footer";
 function App() {
   return (
-    <div>
+    <div className="app-container">
       <Header />
-      <Form
-        sectionTitle="General Info"
-        svgType={bookSVG}
-        formFields={["Full Name", "Email", "Phone Number", "City", "State"]}
-        localName="general"
-      />
-      <Form
-        sectionTitle="Education"
-        svgType={userSVG}
-        formFields={["School Name", "Study", "Start Date", "Graduation Date"]}
-        localName="education"
-      />
-      <Form
-        sectionTitle="Work"
-        svgType={phoneSVG}
-        formFields={[
-          "Company Name",
-          "Position",
-          "Main Responsibility",
-          "Start Date",
-          "End Date",
-          "Description",
-        ]}
-        localName="work"
-      />
-      <Display localName="general" />
-      <Display localName="education" />
-      <Display localName="work" />
+      <main className="content">
+        <section className="forms-container">
+          <Form
+            sectionTitle="General Info"
+            svgType={bookSVG}
+            formFields={["Full Name", "Email", "Phone Number", "City", "State"]}
+            localName="general"
+          />
+          <Form
+            sectionTitle="Education"
+            svgType={userSVG}
+            formFields={[
+              "School Name",
+              "Study",
+              "Start Date",
+              "Graduation Date",
+            ]}
+            localName="education"
+          />
+          <Form
+            sectionTitle="Work"
+            svgType={phoneSVG}
+            formFields={[
+              "Company Name",
+              "Position",
+              "Main Responsibility",
+              "Start Date",
+              "End Date",
+              "Description",
+            ]}
+            localName="work"
+          />
+        </section>
+
+        <section className="display-container">
+          <Display localName="general" />
+          <Display localName="education" />
+          <Display localName="work" />
+        </section>
+      </main>
       <Footer />
     </div>
   );
