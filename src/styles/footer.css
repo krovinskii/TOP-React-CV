@@ -1,0 +1,13 @@
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  background-color: #66a3ca;
+  color: #182939;
+  font-weight: 600;
+  gap: 0.25rem;
+}

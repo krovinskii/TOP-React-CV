@@ -1,0 +1,14 @@
+.header-container {
+  max-height: 15%;
+  background-color: #66a3ca;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: left;
+  padding: 0.5rem 1.3rem;
+  color: #e7f0f7;
+  font-size: 1.4rem;
+}
+.header-container img {
+  height: 4rem;
+}

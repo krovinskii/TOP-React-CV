@@ -4,9 +4,12 @@ import bookSVG from "./assets/book.svg";
 import userSVG from "./assets/user.svg";
 import phoneSVG from "./assets/phone-square.svg";
 import Display from "./displayCV";
+import Header from "./header";
+import Footer from "./Footer";
 function App() {
   return (
     <div>
+      <Header />
       <Form
         sectionTitle="General Info"
         svgType={bookSVG}
@@ -35,6 +38,7 @@ function App() {
       <Display localName="general" />
       <Display localName="education" />
       <Display localName="work" />
+      <Footer />
     </div>
   );
 }
