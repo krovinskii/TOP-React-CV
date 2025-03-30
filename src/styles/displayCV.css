@@ -1,0 +1,137 @@
+/* Professional Resume Styling */
+.cv-display-section {
+  width: 100%;
+  max-width: 800px;
+  padding: 0;
+  background-color: white;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Container for the entire CV */
+.cv-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+}
+
+/* General Info / Header */
+.general-info {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.fullname {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #234057;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.separator {
+  color: #66a3ca;
+  font-weight: bold;
+}
+
+.divider {
+  height: 2px;
+  background-color: #66a3ca;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Section Titles */
+.section-title {
+  color: #234057;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+/* Entry Styling */
+.entry {
+  margin-bottom: 1.5rem;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.3rem;
+}
+
+.institution,
+.company {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.dates {
+  font-size: 0.9rem;
+  color: #555;
+  font-style: italic;
+}
+
+.degree,
+.position {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 0.3rem;
+}
+
+.responsibility {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Education & Work Sections */
+.education-info,
+.work-info {
+  margin-bottom: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cv-container {
+    padding: 1.5rem;
+  }
+
+  .entry-header {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .separator {
+    display: none;
+  }
+}

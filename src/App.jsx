@@ -6,6 +6,8 @@ import phoneSVG from "./assets/phone-square.svg";
 import Display from "./displayCV";
 import Header from "./header";
 import Footer from "./Footer";
+import "./styles/displayCV.css";
+
 function App() {
   return (
     <div className="app-container">
@@ -43,16 +45,16 @@ function App() {
             localName="work"
           />
         </section>
-
         <section className="display-container">
-          <Display localName="general" />
-          <Display localName="education" />
-          <Display localName="work" />
+          <div className="cv-container">
+            <Display localName="general" />
+            <Display localName="education" />
+            <Display localName="work" />
+          </div>
         </section>
       </main>
       <Footer />
     </div>
   );
 }
-
 export default App;
